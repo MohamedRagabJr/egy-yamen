@@ -640,93 +640,6 @@
 
   };
 
-  /* scroll grid product
-  ------------------------------------------------------------------------------------- */
-  var scrollGridProduct = function(){
-
-    var headerHeight = $("#header").outerHeight(); 
-    var activeColorBtn = null; 
-    $(".btn-grid-color").on("click", function () {
-        var color = $(this).data("color");
-        var target = $(".item-img-color[data-color='" + color + "']"); 
-        $('html, body').animate({
-            scrollTop: target.offset().top - headerHeight 
-        }, 100);
-
-        $(".btn-grid-color").removeClass("active");
-        $(this).addClass("active");
-        activeColorBtn = $(this); 
-    });
-
-    $(window).on("scroll", function () {
-        var isActiveSet = false; 
-        $(".item-img-color").each(function () {
-            var targetTop = $(this).offset().top - headerHeight;
-            if ($(window).scrollTop() >= targetTop && $(window).scrollTop() < (targetTop + $(this).outerHeight())) {
-                var color = $(this).data("color");
-                if (!isActiveSet && (activeColorBtn === null || activeColorBtn.data("color") !== color)) {
-                    $(".btn-grid-color").removeClass("active");
-                    $(".btn-grid-color[data-color='" + color + "']").addClass("active");
-                    // $('.value-currentColor').text(color);
-                }
-                isActiveSet = true; 
-            }
-        });
-        if (!isActiveSet && activeColorBtn !== null) {
-            $(".btn-grid-color").removeClass("active");
-            activeColorBtn.addClass("active");
-        }
-    });
-  }
-
-  /* contact form
-  ------------------------------------------------------------------------------------- */
-  var ajaxContactForm = function () {
-    $("#contactform").each(function () {
-      $(this).validate({
-        submitHandler: function (form) {
-          var $form = $(form),
-            str = $form.serialize(),
-            loading = $("<div />", { class: "loading" });
-
-          $.ajax({
-            type: "POST",
-            url: $form.attr("action"),
-            data: str,
-            beforeSend: function () {
-              $form.find(".send-wrap").append(loading);
-            },
-            success: function (msg) {
-              var result, cls;
-              if (msg == "Success") {
-                result =
-                  "Email Sent Successfully. Thank you, Your application is accepted - we will contact you shortly";
-                cls = "msg-success";
-              } else {
-                result = "Error sending email.";
-                cls = "msg-error";
-              }
-              $form.prepend(
-                $("<div />", {
-                  class: "flat-alert " + cls,
-                  text: result,
-                }).append(
-                  $(
-                    '<a class="close" href="#"><i class="icon icon-close2"></i></a>'
-                  )
-                )
-              );
-
-              $form.find(":input").not(".submit").val("");
-            },
-            complete: function (xhr, status, error_thrown) {
-              $form.find(".loading").remove();
-            },
-          });
-        },
-      });
-    }); // each contactform
-  };
   
   /* subscribe mailchimp
   ------------------------------------------------------------------------------------- */
@@ -958,10 +871,8 @@
     headerSticky();
     headerChangeBg();
     totalPriceVariant();
-    scrollGridProduct();
     filterTab();
     writeReview();
-    ajaxContactForm();
     ajaxSubscribe.eventLoad();
     autoPopup();
     rangePrice();

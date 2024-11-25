@@ -6,6 +6,7 @@
     var applyFilter = function () {
       var selectedColors = [];
       var selectedSizes = [];
+      var selectedBrand = [];
       var selectedMinPrice = $(".range-min").val() ? parseFloat($(".range-min").val()) : 0;
       var selectedMaxPrice = $(".range-max").val() ? parseFloat($(".range-max").val()) : 300;
   
@@ -22,6 +23,10 @@
       $(".tf-check-size:checked").each(function () {
         selectedSizes.push($(this).val());
       });
+      // Lấy tất cả các bộ lọc kích thước đã chọn
+      $(".tf-check-brand:checked").each(function () {
+        selectedBrand.push($(this).val());
+      });
   
       var visibleProductCount = 0;  // Đếm số lượng sản phẩm hiển thị
   
@@ -29,14 +34,16 @@
       $(".card-product").each(function () {
         var categoryColor = $(this).data("color");
         var categorySize = $(this).data("size");
+        var categoryBrand = $(this).data("brand");
         var productPrice = parseFloat($(this)?.data("price"));
   
         var showByColor = selectedColors.length === 0 || selectedColors.some(filter => (categoryColor || "").split(" ").includes(filter));
         var showBySize = selectedSizes.length === 0 || selectedSizes.some(filter => (categorySize || "").split(" ").includes(filter));
+        var showByBrand = selectedBrand.length === 0 || selectedBrand.some(filter => (categoryBrand || "").split(" ").includes(filter));
         var showByPrice = productPrice >= selectedMinPrice && productPrice <= selectedMaxPrice;
   
         // Hiển thị sản phẩm nếu nó đáp ứng tất cả các điều kiện
-        if (showByColor && showBySize && showByPrice) {
+        if (showByColor && showBySize && showByBrand && showByPrice) {
           $(this).show();
           visibleProductCount++;  // Tăng bộ đếm sản phẩm hiển thị
         } else {
@@ -71,11 +78,11 @@
         $("#product-count").remove(); 
       }
   
-      if (selectedColors.length > 0 || selectedSizes.length > 0 || selectedMinPrice > 0 || selectedMaxPrice < 300) {
+      if (selectedColors.length > 0 || selectedSizes.length > 0 || selectedBrand.length > 0 || selectedMinPrice > 0 || selectedMaxPrice < 300) {
         if ($("#clear-filters").length === 0) {
           $(".meta-filter-shop").append('<button id="clear-filters" class="tf-btn style-3 btn-fill animate-hover-btn">Clear Filters</button>');
           $("#clear-filters").on("click", function () {
-            $(".tf-check-color, .tf-check-size").prop("checked", false); 
+            $(".tf-check-color, .tf-check-size , .tf-check-brand").prop("checked", false); 
             $(".range-min").val(0);
             $(".range-max").val(300);
             $(".min-price").text('0');
@@ -94,7 +101,7 @@
       }
     };
     // Sự kiện thay đổi checkbox và range input để lọc sản phẩm
-    $("input.tf-check-color, input.tf-check-size, .range-min, .range-max").on("change", applyFilter);
+    $("input.tf-check-color, input.tf-check-size, input.tf-check-brand, .range-min, .range-max").on("change", applyFilter);
   
   };
   

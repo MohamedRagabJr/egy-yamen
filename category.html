@@ -247,7 +247,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-3">
                         <div class="canvas-wrapper">
                             <header class="canvas-header">
-                                <div class="filter-icon">
+                                <div class="tf-btn-filter">
                                     <span class="icon icon-filter"></span>
                                     <span>Filter</span>
                                 </div>
@@ -260,11 +260,9 @@
                                     </div>
                                     <div id="categories" class="collapse show">
                                         <ul class="list-categoris current-scrollbar mb_36">
-                                            <li class="cate-item current"><a href="shop-default.html"><span>Fashion</span></a></li>
-                                            <li class="cate-item"><a href="shop-default.html"><span>Men</span></a></li>
-                                            <li class="cate-item"><a href="shop-default.html"><span>Women</span></a></li>
-                                            <li class="cate-item"><a href="shop-default.html"><span>Denim</span></a></li>
-                                            <li class="cate-item"><a href="shop-default.html"><span>Dress</span></a></li>
+                                            <li class="cate-item current"><a href="shop-default.html"><span>Beans Coffee</span></a></li>
+                                            <li class="cate-item"><a href="shop-default.html"><span>Capsules Coffee</span></a></li>
+                                            <li class="cate-item"><a href="shop-default.html"><span>Ground Coffee</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -305,12 +303,12 @@
                                                     <span class="title-price">Price :</span>
                                                     <div class="caption-price">
                                                         <div>
-                                                            <span>$</span>
+                                                            <span>EGP</span>
                                                             <span class="min-price">0</span>
                                                         </div>
                                                         <span>-</span>
                                                         <div>
-                                                            <span>$</span>
+                                                            <span>EGP</span>
                                                             <span class="max-price">300</span>
                                                         </div>
                                                     </div>
@@ -321,138 +319,76 @@
                                     </div>
                                     <div class="widget-facet">
                                         <div class="facet-title" data-bs-target="#brand" data-bs-toggle="collapse" aria-expanded="true" aria-controls="brand">
-                                            <span>Brand</span>
+                                            <span>Main Products</span>
                                             <span class="icon icon-arrow-up"></span>
                                         </div>
                                         <div id="brand" class="collapse show">
                                             <ul class="tf-filter-group current-scrollbar mb_36">
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="radio" name="brand" class="tf-check" id="brand-1">
-                                                    <label for="brand-1" class="label"><span>Ecomus</span>&nbsp;<span>(8)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-1" id="brand-1">
+                                                    <label for="brand-1" class="label"><span>Espresso Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="radio" name="brand" class="tf-check" id="brand-2">
-                                                    <label for="brand-2" class="label"><span>M&H</span>&nbsp;<span>(8)</span></label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="widget-facet">
-                                        <div class="facet-title" data-bs-target="#color" data-bs-toggle="collapse" aria-expanded="true" aria-controls="color">
-                                            <span>Color</span>
-                                            <span class="icon icon-arrow-up"></span>
-                                        </div>
-                                        <div id="color" class="collapse show">
-                                            <ul class="tf-filter-group filter-color current-scrollbar mb_36">
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_beige" id="beige" value="beige">
-                                                    <label for="beige" class="label"><span>Beige</span>&nbsp;<span>(3)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-2" id="brand-2">
+                                                    <label for="brand-2" class="label"><span>Brazilian Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_dark" id="black" value="black">
-                                                    <label for="black" class="label"><span>Black</span>&nbsp;<span>(18)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-3" id="brand-3">
+                                                    <label for="brand-3" class="label"><span>Flavored Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_blue-2" id="blue" value="blue">
-                                                    <label for="blue" class="label"><span>Blue</span>&nbsp;<span>(3)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-4" id="brand-4">
+                                                    <label for="brand-4" class="label"><span>Turkish Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_brown" id="brown" value="brown">
-                                                    <label for="brown" class="label"><span>Brown</span>&nbsp;<span>(3)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-5" id="brand-5">
+                                                    <label for="brand-5" class="label"><span>Green Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_cream" id="cream" value="cream">
-                                                    <label for="cream" class="label"><span>Cream</span>&nbsp;<span>(1)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-6" id="brand-6">
+                                                    <label for="brand-6" class="label"><span>Arabic Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_dark-beige" id="dark-beige" value="dark-beige">
-                                                    <label for="dark-beige" class="label"><span>Dark Beige</span>&nbsp;<span>(1)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-7" id="brand-7">
+                                                    <label for="brand-7" class="label"><span>Instant Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_dark-blue" id="dark-blue" value="dark-blue">
-                                                    <label for="dark-blue" class="label"><span>Dark Blue</span>&nbsp;<span>(3)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_dark-green" id="dark-green" value="dark-green">
-                                                    <label for="dark-green" class="label"><span>Dark Green</span>&nbsp;<span>(1)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_dark-grey" id="dark-grey" value="dark-grey">
-                                                    <label for="dark-grey" class="label"><span>Dark Grey</span>&nbsp;<span>(1)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_grey" id="grey" value="grey">
-                                                    <label for="grey" class="label"><span>Grey</span>&nbsp;<span>(2)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_light-blue" id="light-blue" value="light-blue">
-                                                    <label for="light-blue" class="label"><span>Light Blue</span>&nbsp;<span>(5)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_light-green" id="light-green" value="light-green">
-                                                    <label for="light-green" class="label"><span>Light Green</span>&nbsp;<span>(3)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_light-grey" id="light-grey" value="light-grey">
-                                                    <label for="light-grey" class="label"><span>Light Grey</span>&nbsp;<span>(1)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_light-pink" id="light-pink" value="light-pink">
-                                                    <label for="light-pink" class="label"><span>Light Pink</span>&nbsp;<span>(2)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_purple" id="light-purple" value="light-purple">
-                                                    <label for="light-purple" class="label"><span>Light Purple</span>&nbsp;<span>(2)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_light-yellow" id="light-yellow" value="light-yellow">
-                                                    <label for="light-yellow" class="label"><span>Light Yellow</span>&nbsp;<span>(1)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_orange" id="orange" value="orange">
-                                                    <label for="orange" class="label"><span>Orange</span>&nbsp;<span>(1)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_pink" id="pink" value="pink">
-                                                    <label for="pink" class="label"><span>Pink</span>&nbsp;<span>(2)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_taupe" id="taupe" value="taupe">
-                                                    <label for="taupe" class="label"><span>Taupe</span>&nbsp;<span>(1)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_white" id="white" value="white">
-                                                    <label for="white" class="label"><span>White</span>&nbsp;<span>(14)</span></label>
-                                                </li>
-                                                <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="checkbox" name="color" class="tf-check-color bg_yellow" id="yellow" value="yellow">
-                                                    <label for="yellow" class="label"><span>Yellow</span>&nbsp;<span>(1)</span></label>
+                                                    <input type="radio" name="brand" class="tf-check tf-check-brand" value="brand-8" id="brand-8">
+                                                    <label for="brand-8" class="label"><span>French   Coffee</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="widget-facet">
                                         <div class="facet-title" data-bs-target="#size" data-bs-toggle="collapse" aria-expanded="true" aria-controls="size">
-                                            <span>Size</span>
+                                            <span>Items</span>
                                             <span class="icon icon-arrow-up"></span>
                                         </div>
                                         <div id="size" class="collapse show">
                                             <ul class="tf-filter-group current-scrollbar">
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="s" id="s">
-                                                    <label for="s" class="label"><span>S</span>&nbsp;<span>(7)</span></label>
+                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="roasted-blended" id="roasted-blended">
+                                                    <label for="roasted-blended" class="label"><span>Light roasted blended</span>&nbsp;<span>(7)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="m" id="m">
-                                                    <label for="m" class="label"><span>M</span>&nbsp;<span>(8)</span></label>
+                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="roasted-blended2" id="roasted-blended2">
+                                                    <label for="roasted-blended2" class="label"><span>Medium roasted blended</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="l" id="l">
-                                                    <label for="l" class="label"><span>L</span>&nbsp;<span>(8)</span></label>
+                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="roasted-blended3" id="roasted-blended3">
+                                                    <label for="roasted-blended3" class="label"><span>Dark roasted blended</span>&nbsp;<span>(8)</span></label>
                                                 </li>
                                                 <li class="list-item d-flex gap-12 align-items-center">
-                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="xl" id="xl">
-                                                    <label for="xl" class="label"><span>XL</span>&nbsp;<span>(6)</span></label>
+                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="roasted-plain" id="roasted-plain">
+                                                    <label for="roasted-plain" class="label"><span>Light roasted plain Coffee</span>&nbsp;<span>(6)</span></label>
+                                                </li>
+                                                <li class="list-item d-flex gap-12 align-items-center">
+                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="roasted-plain2" id="roasted-plain2">
+                                                    <label for="roasted-plain2" class="label"><span>Medium roasted plain Coffee</span>&nbsp;<span>(6)</span></label>
+                                                </li>
+                                                <li class="list-item d-flex gap-12 align-items-center">
+                                                    <input type="radio" name="size" class="tf-check tf-check-size" value="roasted-plain3" id="roasted-plain3">
+                                                    <label for="roasted-plain3" class="label"><span>Dark roasted plain Coffee</span>&nbsp;<span>(6)</span></label>
                                                 </li>
                                             </ul>
                                         </div>
@@ -463,10 +399,7 @@
                         </div>  
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-9">
-                        <div class="tf-shop-control grid-2 align-items-center">
-                            <div class="tf-control-filter">
-                                <a href="#" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="tf-btn-filter"><span class="icon icon-filter"></span><span class="text">Filter</span></a>
-                            </div>
+                        <div class="tf-shop-control grid-1 align-items-center">
                             
                             <div class="tf-control-sorting d-flex justify-content-end">
                                 <div class="tf-dropdown-sort" data-bs-toggle="dropdown">
@@ -508,7 +441,7 @@
                             <div class="meta-filter-shop"></div>
                             <div class="grid-layout wrapper-shop" data-grid="grid-3">
                                 <!-- card product 1 -->
-                                <div class="card-product" data-price="16.95" data-color="orange black white">
+                                <div class="card-product" data-price="80">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                         <img class="lazyload img-product" data-src="images/product/21.jpg" src="images/product/21.jpg" alt="image-product">
@@ -537,7 +470,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 2 -->
-                                <div class="card-product" data-price="18.95" data-size="m l xl" data-color="brown light-purple light-green">
+                                <div class="card-product" data-price="70" data-size="roasted-blended" data-brand="brand-1">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/11.jpg" src="images/product/11.jpg" alt="image-product">
@@ -566,7 +499,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 3 -->
-                                <div class="card-product" data-price="10">
+                                <div class="card-product" data-price="75" data-size="roasted-plain2" data-brand="brand-5">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/4.jpg" src="images/product/4.jpg" alt="image-product">
@@ -594,7 +527,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 4 -->
-                                <div class="card-product" data-price="16.95" data-size="s m l xl" data-color="white purple black">
+                                <div class="card-product" data-price="55" data-size="roasted-plain" data-brand="brand-2">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/3.jpg" src="images/product/3.jpg" alt="image-product">
@@ -623,7 +556,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 5 -->
-                                <div class="card-product" data-price="114.95" data-size="s m l xl" data-color="brown white">
+                                <div class="card-product" data-price="120" data-size="roasted-plain3" data-brand="brand-3">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/1.jpg" src="images/product/1.jpg" alt="image-product">
@@ -654,7 +587,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 6 -->
-                                <div class="card-product" data-price="10.00" data-color="light-green black blue dark-blue white light-grey">
+                                <div class="card-product" data-price="130" data-size="roasted-plain2" data-brand="brand-1">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/2.jpg" src="images/product/2.jpg" alt="image-product">
@@ -684,7 +617,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 7 -->
-                                <div class="card-product" data-price="10.00" data-size="s m l" data-color="black dark-blue beige light-blue white">
+                                <div class="card-product" data-price="55" data-size="roasted-blended2" data-brand="brand-5">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/3.jpg" src="images/product/3.jpg" alt="image-product">
@@ -713,7 +646,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 8 -->
-                                <div class="card-product" data-price="9.95" data-size="s m l xl" data-color="white black blue">
+                                <div class="card-product" data-price="90" data-size="roasted-blended3" data-brand="brand-7">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/11.jpg" src="images/product/11.jpg" alt="image-product">
@@ -742,7 +675,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 9 -->
-                                <div class="card-product" data-price="14.95" data-size="m l xl" data-color="brown black">
+                                <div class="card-product" data-price="95" data-size="roasted-plain3" data-brand="brand-2">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/4.jpg" src="images/product/4.jpg" alt="image-product">
@@ -770,7 +703,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 10 -->
-                                <div class="card-product" data-price="18.95" data-size="s m l" data-color="black white">
+                                <div class="card-product" data-price="150" data-size="roasted-plain2" data-brand="brand-4">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/3.jpg" src="images/product/3.jpg" alt="image-product">
@@ -799,7 +732,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 11 -->
-                                <div class="card-product" data-price="18.95" data-size="s m l" data-color="grey pink light-pink">
+                                <div class="card-product" data-price="95" data-size="roasted-plain" data-brand="brand-6">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                         <img class="lazyload img-product" data-src="images/product/21.jpg" src="images/product/21.jpg" alt="image-product">
@@ -828,7 +761,7 @@
                                     </div>
                                 </div>
                                 <!-- card product 12 -->
-                                <div class="card-product" data-price="18.95" data-size="s m l">
+                                <div class="card-product" data-price="85" data-size="roasted-blended2" data-brand="brand-8">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="lazyload img-product" data-src="images/product/3.jpg" src="images/product/3.jpg" alt="image-product">
@@ -1789,20 +1722,6 @@
                     <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
                 </div>
                 <div class="wrap">
-                    <div class="tf-mini-cart-threshold">
-                        <div class="tf-progress-bar">
-                            <span style="width: 50%;">
-                                <div class="progress-car">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="currentColor">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.875C0 0.391751 0.391751 0 0.875 0H13.5625C14.0457 0 14.4375 0.391751 14.4375 0.875V3.0625H17.3125C17.5867 3.0625 17.845 3.19101 18.0104 3.40969L20.8229 7.12844C20.9378 7.2804 21 7.46572 21 7.65625V11.375C21 11.8582 20.6082 12.25 20.125 12.25H17.7881C17.4278 13.2695 16.4554 14 15.3125 14C14.1696 14 13.1972 13.2695 12.8369 12.25H7.72563C7.36527 13.2695 6.39293 14 5.25 14C4.10706 14 3.13473 13.2695 2.77437 12.25H0.875C0.391751 12.25 0 11.8582 0 11.375V0.875ZM2.77437 10.5C3.13473 9.48047 4.10706 8.75 5.25 8.75C6.39293 8.75 7.36527 9.48046 7.72563 10.5H12.6875V1.75H1.75V10.5H2.77437ZM14.4375 8.89937V4.8125H16.8772L19.25 7.94987V10.5H17.7881C17.4278 9.48046 16.4554 8.75 15.3125 8.75C15.0057 8.75 14.7112 8.80264 14.4375 8.89937ZM5.25 10.5C4.76676 10.5 4.375 10.8918 4.375 11.375C4.375 11.8582 4.76676 12.25 5.25 12.25C5.73323 12.25 6.125 11.8582 6.125 11.375C6.125 10.8918 5.73323 10.5 5.25 10.5ZM15.3125 10.5C14.8293 10.5 14.4375 10.8918 14.4375 11.375C14.4375 11.8582 14.8293 12.25 15.3125 12.25C15.7957 12.25 16.1875 11.8582 16.1875 11.375C16.1875 10.8918 15.7957 10.5 15.3125 10.5Z"></path>
-                                    </svg>
-                                </div>
-                            </span>
-                        </div>
-                        <div class="tf-progress-msg">
-                            Buy <span class="price fw-6">75.00 EGP</span> more to enjoy <span class="fw-6">Free Shipping</span>
-                        </div>
-                    </div>
                     <div class="tf-mini-cart-wrap">
                         <div class="tf-mini-cart-main">
                             <div class="tf-mini-cart-sroll">

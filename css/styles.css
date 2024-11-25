@@ -14499,7 +14499,9 @@ blockquote .text {
 .box-invoice .box-left {
   width: 60%;
 }
-
+.box-invoice .box-left img{
+  width: 200px;
+}
 .box-invoice .wrap-top .box-right {
   width: 40%;
 }
